@@ -2,6 +2,8 @@ package com.jalindsay;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+// Java entity for the database entry
+// Uses annotations so the json reader can identify capitalized variable names
 public class Entry {
 
 	private String Name;
