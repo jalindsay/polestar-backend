@@ -27,7 +27,6 @@ public class Main {
         );
 
         Entry[] entries = new Entry[3];
-
         try {
             entries = mapper.readValue(file, Entry[].class);
         } catch (IOException e) {

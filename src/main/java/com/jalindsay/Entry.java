@@ -2,50 +2,50 @@ package com.jalindsay;
 
 public class Entry {
 
-	private String name;
+	private String Name;
 
-	private Long alarmColor;
+	private Long AlarmColor;
 
-	private Long id;
+	private Long Id;
 
-	private Long datasourcesCount;
+	private Long DatasourcesCount;
 
 	private String _alertIcon;
 
-	private Long elementCount;
+	private Long ElementCount;
 
-	private String uniqueId;
+	private String UniqueId;
 
 	public String getName() {
-		return name;
+		return Name;
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		Name = name;
 	}
 
 	public Long getAlarmColor() {
-		return alarmColor;
+		return AlarmColor;
 	}
 
 	public void setAlarmColor(Long alarmColor) {
-		this.alarmColor = alarmColor;
+		AlarmColor = alarmColor;
 	}
 
 	public Long getId() {
-		return id;
+		return Id;
 	}
 
 	public void setId(Long id) {
-		this.id = id;
+		Id = id;
 	}
 
 	public Long getDatasourcesCount() {
-		return datasourcesCount;
+		return DatasourcesCount;
 	}
 
 	public void setDatasourcesCount(Long datasourcesCount) {
-		this.datasourcesCount = datasourcesCount;
+		DatasourcesCount = datasourcesCount;
 	}
 
 	public String get_alertIcon() {
@@ -57,18 +57,18 @@ public class Entry {
 	}
 
 	public Long getElementCount() {
-		return elementCount;
+		return ElementCount;
 	}
 
 	public void setElementCount(Long elementCount) {
-		this.elementCount = elementCount;
+		ElementCount = elementCount;
 	}
 
 	public String getUniqueId() {
-		return uniqueId;
+		return UniqueId;
 	}
 
 	public void setUniqueId(String uniqueId) {
-		this.uniqueId = uniqueId;
+		UniqueId = uniqueId;
 	}
 }
