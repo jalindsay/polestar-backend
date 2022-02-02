@@ -1,5 +1,8 @@
 package com.jalindsay;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import org.json.simple.JSONObject;
+
 public class Entry {
 
 	private String Name;
@@ -16,6 +19,9 @@ public class Entry {
 
 	private String UniqueId;
 
+	private Object parameters;
+
+	@JsonProperty("Name")
 	public String getName() {
 		return Name;
 	}
@@ -24,6 +30,7 @@ public class Entry {
 		Name = name;
 	}
 
+	@JsonProperty("AlarmColor")
 	public Long getAlarmColor() {
 		return AlarmColor;
 	}
@@ -32,6 +39,7 @@ public class Entry {
 		AlarmColor = alarmColor;
 	}
 
+	@JsonProperty("Id")
 	public Long getId() {
 		return Id;
 	}
@@ -40,6 +48,7 @@ public class Entry {
 		Id = id;
 	}
 
+	@JsonProperty("DatasourcesCount")
 	public Long getDatasourcesCount() {
 		return DatasourcesCount;
 	}
@@ -56,6 +65,7 @@ public class Entry {
 		this._alertIcon = _alertIcon;
 	}
 
+	@JsonProperty("ElementCount")
 	public Long getElementCount() {
 		return ElementCount;
 	}
@@ -64,11 +74,21 @@ public class Entry {
 		ElementCount = elementCount;
 	}
 
+	@JsonProperty("UniqueID")
 	public String getUniqueId() {
 		return UniqueId;
 	}
 
 	public void setUniqueId(String uniqueId) {
 		UniqueId = uniqueId;
+	}
+
+	@JsonProperty("Parameters")
+	public Object getParameters() {
+		return parameters;
+	}
+
+	public void setParameters(Object parameters) {
+		this.parameters = parameters;
 	}
 }
