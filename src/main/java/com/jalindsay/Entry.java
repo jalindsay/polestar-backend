@@ -1,7 +1,6 @@
 package com.jalindsay;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.json.simple.JSONObject;
 
 public class Entry {
 

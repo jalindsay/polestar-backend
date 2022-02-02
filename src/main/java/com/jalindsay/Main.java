@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.URL;
 
 public class Main {
 
@@ -22,9 +23,14 @@ public class Main {
 
         ObjectMapper mapper = new ObjectMapper();
 
-        File file = new File(
-            this.getClass().getClassLoader().getResource(inputPath).getFile()
-        );
+        URL fileUrl = this.getClass().getClassLoader().getResource(inputPath);
+        File file = null;
+
+        if (fileUrl != null) {
+            file = new File(fileUrl.getFile());
+        } else {
+            System.err.println("File not found");
+        }
 
         Entry[] entries = new Entry[3];
         try {
